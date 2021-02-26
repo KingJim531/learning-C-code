@@ -121,4 +121,71 @@
 //	return 0;
 //}
 
+//define 定义标识符常量
+//#define MAX 100
+//define 可以定义宏--带参数
 
+//函数的实现
+//int Max(int x, int y) {
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+////宏的定义
+//#define MAX(X,Y)(X>Y?X:Y)
+//
+//int main() {
+//	int a = 10;
+//	int b = 20;
+//	//函数
+//	printf("%d\n", Max(a, b));
+//	//宏
+//	printf("%d\n", MAX(a, b));
+//	return 0;
+//}
+
+//int main() {
+//	int a = 10;
+//	// &a --取a的地址
+//	int* p = &a;
+//	//有一种变量用来存放地址→指针变量,p为一个整型指针变量
+//	//printf("%p\n",&a);// %p打印地址
+//	//printf("%p\n", p);
+//	//*p前面这个*，--- 解引用操作符/间接访问操作符，解析p所存地址指向变量的值
+//	*p = 20;
+//	printf("a=%d\n", a);
+//	return 0;
+//}
+
+//以整型指针举例，推广到其他类型，如：
+//int main() {
+//	char ch = 'w';
+//	char* p = &ch;
+//	*p = 'a';
+//	printf("ch = %c\n", ch);
+//	printf("%d\n", sizeof(p));//指针变量在32位平台是4个字节，64位平台是8个字节，可在debug那里改！
+//	return 0;
+//}
+
+//结构体
+struct stu {
+	char name[20];//姓名
+	int age;	  //年龄
+	char sex[5]; //性别
+	char id[15];//学号
+};
+//打印结构体信息
+int main(){
+	struct stu s = { "张三","20","男","20210101" };
+	printf("姓名 = %s 年龄 = %d 性别 = %s 学号= %s\n", s.name, s.age, s.sex, s.id);
+	//结构体类型指针变量--存s的地址
+	struct stu* pb = &s;
+	//利用pb来打印学号和姓名
+	printf("%s\n", (*pb).name);
+	printf("%s\n", (*pb).id);
+	// . 用于结构体变量， ->  用于结构体指针 指向变量的成员
+	printf("%s\n", pb->name);
+	printf("%s\n", pb->id);
+	return 0;
+}
