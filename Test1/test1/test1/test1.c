@@ -169,23 +169,23 @@
 //}
 
 //结构体
-struct stu {
-	char name[20];//姓名
-	int age;	  //年龄
-	char sex[5]; //性别
-	char id[15];//学号
-};
-//打印结构体信息
-int main(){
-	struct stu s = { "张三","20","男","20210101" };
-	printf("姓名 = %s 年龄 = %d 性别 = %s 学号= %s\n", s.name, s.age, s.sex, s.id);
-	//结构体类型指针变量--存s的地址
-	struct stu* pb = &s;
-	//利用pb来打印学号和姓名
-	printf("%s\n", (*pb).name);
-	printf("%s\n", (*pb).id);
-	// . 用于结构体变量， ->  用于结构体指针 指向变量的成员
-	printf("%s\n", pb->name);
-	printf("%s\n", pb->id);
-	return 0;
-}
+//struct stu {
+//	char name[20];//姓名
+//	int age;	  //年龄
+//	char sex[5]; //性别
+//	char id[15];//学号
+//};
+////打印结构体信息
+//int main(){
+//	struct stu s = { "张三","20","男","20210101" };
+//	printf("姓名 = %s 年龄 = %d 性别 = %s 学号= %s\n", s.name, s.age, s.sex, s.id);
+//	//结构体类型指针变量--存s的地址
+//	struct stu* pb = &s;
+//	//利用pb来打印学号和姓名
+//	printf("%s\n", (*pb).name);
+//	printf("%s\n", (*pb).id);
+//	// . 用于结构体变量， ->  用于结构体指针 指向变量的成员
+//	printf("%s\n", pb->name);
+//	printf("%s\n", pb->id);
+//	return 0;
+//}

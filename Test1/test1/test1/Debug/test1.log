@@ -1,3 +1,2 @@
-﻿  test1.c
-E:\Progarm File\MyVs\learning-C-code\Test1\test1\test1\test1.c(180,1): warning C4047: “初始化”:“int”与“char [3]”的间接级别不同
+﻿  test2.c
   test1.vcxproj -> E:\Progarm File\MyVs\learning-C-code\Test1\test1\Debug\test1.exe
