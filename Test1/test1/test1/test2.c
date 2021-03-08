@@ -271,19 +271,35 @@
 //2.计算1!+2!+…+10!的阶乘
 //int main() {
 //	int a = 1;
-//	int n,i;
+//	int n,sum=0;
 //	printf("***计算1!+2!+…+10!的阶乘***\n");
-//	for (n=1; n <=i; n++) {
+//	for (n=1; n <=10; n++) {
 //		a *= n;
-//		printf("%d的阶乘为:%d\n", n, a);
+//		sum += a;
 //		}
-//	
-//	
-//  }
-			
-		
-	//	return 0;
-}
+//	printf("sum=%d\n",sum);
+//	return 0;
+//	  }
+
+//遍历顺序数组
+//int main() {
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int k = 7;
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i < sz; i++) {
+//		if (k == arr[i]) {
+//			printf("找到了，下标是：%d\n", i);
+//			break;//找到后跳出！
+//		}
+//	}
+//	if(i==sz)
+//		printf("没找到！\n");
+//	return 0;
+//}
+
+//折半查找
+
 
 //代码1 //编写代码，演示多个字符从两端移动，向中间汇聚 #include <stdio.h>
 //int main()
